@@ -1,7 +1,7 @@
 import { fetchReviews } from 'api';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { ReviewAuthorList } from './Reviews.styled';
+import { ReviewAuthorList, ReviewAuthorReview } from './Reviews.styled';
 
 const Reviews = () => {
   const { id } = useParams();
@@ -32,7 +32,7 @@ const Reviews = () => {
           ))}
         </ReviewAuthorList>
       ) : (
-        <div>Немає даних про акторський склад.</div>
+        <ReviewAuthorReview>Немає даних про відгуки.</ReviewAuthorReview>
       )}
     </>
   );

@@ -12,8 +12,8 @@ export const CastListImg = styled.img`
   box-shadow: 0px 0px 20px grey;
 `;
 export const CastListName = styled.p`
-text-align: center;
-font-size: 18px;
+  text-align: center;
+  font-size: 18px;
 `;
 export const CastCharacter = styled.p`
   text-align: center;
